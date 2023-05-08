@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const urlParams = new URLSearchParams(window.location.search);
  
-  const id = urlParams.get('id');
+  const id = urlParams.get('ref');
   const currentUrl = window.location.href;
    console.log(urlParams)
    console.log(id)
