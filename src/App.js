@@ -14,13 +14,14 @@ function App() {
   useEffect(() => {
 
     const socket = io(ENDPOINT);
+    console.log(socket)
+    socket.emit("check", { data: 'Hello, server!' });
     console.log("trying" )
    
     socket.on('serverEvent', (data) => {
       console.log('Received message from server:', data);
     });
 
-    socket.emit("check", { data: 'Hello, server!' });
 
 
 
