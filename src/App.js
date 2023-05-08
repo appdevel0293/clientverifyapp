@@ -5,6 +5,7 @@ function App() {
   const urlParams = new URLSearchParams(window.location.search);
  
   const id = urlParams.get('id');
+  const currentUrl = window.location.href;
    console.log(urlParams)
    console.log(id)
 
@@ -13,7 +14,7 @@ function App() {
       <header className="App-header">
   
         <p>
-          Should display parameter here:  {id}
+          {currentUrl}  {id}
         </p>
        
       </header>
