@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
   
         <p>
-          {id}
+          Should display parameter here:  {id}
         </p>
        
       </header>
