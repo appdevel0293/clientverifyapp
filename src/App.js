@@ -8,7 +8,7 @@ function App() {
 
 
 
-  const ENDPOINT = "https://nodenftpassserver.onrender.com:10000";
+  const ENDPOINT = "https://nodenftpassserver.onrender.com:8888/";
 
 
   useEffect(() => {
