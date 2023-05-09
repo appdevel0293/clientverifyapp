@@ -9,12 +9,13 @@ function App() {
 
 
   const ENDPOINT = "https://nodenftpassserver.onrender.com:5050/";
+  const ENDPOINT2 = "https://nodenftpassserver.onrender.com/";
 
 
   useEffect(() => {
 
 
- fetch(ENDPOINT)
+ fetch(ENDPOINT2)
       .then(response => response.text())
       .then(data => console.log('Server response:', data))
       .catch(error => console.error('Error:', error));
